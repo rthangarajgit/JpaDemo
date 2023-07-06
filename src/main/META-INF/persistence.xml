@@ -1,0 +1,18 @@
+<persistence>
+<persistence-unit name="TestFolder">
+
+    <class>com.javatpoint.jpa.student.StudentEntity</class>
+
+<properties>
+<property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+<property name="javax.persistence.jdbc.url" value="jdbc:h2:data/testdb.db"/>
+<property name="javax.persistence.jdbc.user" value="admin"/>
+<property name="javax.persistence.jdbc.password" value="admin"/>
+<property name="eclipselink.logging.level" value="SEVERE"/>
+<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+<provider>org.hibernate.ejb.HibernatePersistence</provider>
+</properties>
+
+    </persistence-unit>
+</persistence>
